@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; max-width: 300px; margin: 20px auto; }
+    @media (min-width: 600px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+    .card { height: 80px; background: blue; color: white; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+</style>
+</head>
+<body>
+    <h2 style="text-align:center">Game Ghép Thẻ</h2>
+    <div class="grid" id="game"></div>
+    <script>
+        const grid = document.getElementById('game');
+        const cards = ['🍎','🍎','🍌','🍌','🍇','🍇','🍓','🍓'].sort(() => Math.random() - 0.5);
+        cards.forEach(c => {
+            let div = document.createElement('div');
+            div.className = 'card';
+            div.innerText = '?';
+            div.onclick = () => { div.innerText = c; };
+            grid.appendChild(div);
+        });
+    </script>
+</body>
+</html>
