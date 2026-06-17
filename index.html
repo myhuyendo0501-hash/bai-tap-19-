@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đèn Kéo Quân</title>
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #222; margin: 0; }
+        .container { perspective: 1000px; }
+        .lamp { width: 200px; height: 200px; transform-style: preserve-3d; animation: rotate 10s linear infinite; }
+        .lamp:hover { animation-play-state: paused; } /* Dừng khi rê chuột vào */
+        .face { position: absolute; width: 200px; height: 200px; border: 2px solid #ffd700; display: flex; justify-content: center; align-items: center; background: rgba(255,255,255,0.9); font-weight: bold; cursor: pointer; }
+        .f1 { transform: rotateY(0deg) translateZ(173px); }
+        .f2 { transform: rotateY(60deg) translateZ(173px); }
+        .f3 { transform: rotateY(120deg) translateZ(173px); }
+        .f4 { transform: rotateY(180deg) translateZ(173px); }
+        .f5 { transform: rotateY(240deg) translateZ(173px); }
+        .f6 { transform: rotateY(300deg) translateZ(173px); }
+        @keyframes rotate { from { transform: rotateY(0deg); } to { transform: rotateY(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lamp">
+            <div class="face f1">Hình 1</div>
+            <div class="face f2">Hình 2</div>
+            <div class="face f3">Hình 3</div>
+            <div class="face f4">Hình 4</div>
+            <div class="face f5">Hình 5</div>
+            <div class="face f6">Hình 6</div>
+        </div>
+    </div>
+</body>
+</html>
