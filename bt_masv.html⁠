@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ sinh viên</title>
+</head>
+<body>
+    <h1>Họ và tên: [Điền tên của bạn vào đây]</h1>
+    <p>Mã sinh viên: [Điền mã sinh viên vào đây]</p>
+    
+    <h2>Kết quả bài tập 18</h2>
+    <img src="ten_anh_cua_ban.png" alt="Kết quả bài 18" style="width: 200px;">
+    
+    <br><br>
+    <a href="baitap19.html">Bấm vào đây để chơi game ghép thẻ</a>
+</body>
+</html>
